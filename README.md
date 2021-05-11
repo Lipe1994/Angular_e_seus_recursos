@@ -4,12 +4,13 @@ Neste repositório vou colocar vários projetos, cada um com um recurso diferent
 
 1. [Projeto usando pipes](PipesNoAngular/)
 2. [Promises e Observables](AngularPromisesEObservables/)
-3. [ReactiveForm Com FormBuilder](ReactiveFormComFormBuilder/)
-4. [ReactiveForm Com FormBuilder e Validators](ReactiveFormComFormBuilderEValidators/)
-5. [FormBuilder com validators do NgBrazil](FormBuilderComValidatorsDoNgBrazil/)
-6. [ReactiveForms com validacoes avancadas](ReactiveFormsComValidacoesAvancadas/)
-7. [Angular Arquitetura de Componentes](AngularArquiteturaDeComponentes/)
-8. [Angular e Rotas](AngularAndRoutes/)
+3. [Reactiveform com FormGroup](ReactiveformComFormGroup/)
+4. [ReactiveForm com FormBuilder](ReactiveFormComFormBuilder/)
+5. [ReactiveForm com FormBuilder e Validators](ReactiveFormComFormBuilderEValidators/)
+6. [FormBuilder com validators do NgBrazil](FormBuilderComValidatorsDoNgBrazil/)
+7. [ReactiveForms com validacoes avancadas](ReactiveFormsComValidacoesAvancadas/)
+8. [Angular Arquitetura de Componentes](AngularArquiteturaDeComponentes/)
+9. [Angular e Rotas](AngularAndRoutes/)
 
 
 ![Example img](angular.png)

@@ -1,0 +1,25 @@
+<div  class="formulario">
+
+  <h1>{{title}}</h1>
+  <hr />
+
+  <form (ngSubmit)="chamarLog()" [formGroup]="form" novalidade>
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Nome" aria-describedby="sizing-addon1" formControlName="name" />
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Sobrenome" aria-describedby="sizing-addon1" formControlName="lastName" />
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Telefone" aria-describedby="sizing-addon1" formControlName="phone" />
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1" formControlName="email" />
+      </div>
+
+      <button class='btn btn-info'  type="submit">Evento</button>
+  </form>
+</div>
