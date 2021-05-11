@@ -1,0 +1,22 @@
+<div>
+  <h6>{{product?.name}}</h6>
+  <img [src]="product?.image" />
+  
+  <ng-content select="p"></ng-content>
+  
+    <button 
+      type="button" 
+      class="btn"  
+      [class]="product?.active ? 'btn-info' : 'btn-danger'"
+      (click)="event()"
+    >
+      {{product?.active ? 'active' : 'inactive'}}
+    </button>
+    <button 
+        type="button" 
+        class="btn"  
+        [routerLink]="['../details', product?.id]"
+      >
+        details
+      </button>
+</div>

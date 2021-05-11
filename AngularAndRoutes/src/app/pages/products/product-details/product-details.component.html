@@ -1,0 +1,12 @@
+<div *ngIf="product$ | async as product">
+  <button 
+    (click)="voltar()"
+    class="btn btn-success" >
+      Voltar
+  </button>
+
+  <h6>{{product?.name}}</h6>
+  <img [src]="product?.image" />
+  <p>{{product?.description}}</p>
+
+</div>

@@ -1,0 +1,10 @@
+div{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    
+    background-color: lightgray;
+}
+p{
+    text-align: center;
+}
