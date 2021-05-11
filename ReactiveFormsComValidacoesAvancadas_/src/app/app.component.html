@@ -1,0 +1,49 @@
+<div  class="formulario">
+
+  <h1>{{title}}</h1>
+  <hr />
+
+  <form (ngSubmit)="chamarLog()" [formGroup]="form" novalidade>
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Nome"  formControlName="name" />
+        <span *ngIf="displayMessages.name">
+          <p [innerHTML]="displayMessages.name"></p>
+        </span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Sobrenome"  formControlName="lastName" />
+        <span *ngIf="displayMessages.lastName">
+          <p [innerHTML]="displayMessages.lastName"></p>
+        </span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="cpf" formControlName="cpf" cpf [textMask]="{mask: MASKS.cpf.textMask}"  />
+        <span *ngIf="displayMessages.cpf">
+          <p [innerHTML]="displayMessages.cpf"></p>
+        </span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Telefone" formControlName="telefone" telefone #telefone [textMask]="{mask: MASKS.telefone?.textMaskFunction(telefone?.value)}"  />
+        <span *ngIf="displayMessages.telefone">
+          <p [innerHTML]="displayMessages.telefone"></p>
+        </span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Email"  formControlName="email" />
+        <span *ngIf="displayMessages.email">
+          <p [innerHTML]="displayMessages.email"></p>
+        </span>
+      </div>
+
+      <button class='btn btn-info'  type="submit">Evento</button>
+  </form>
+
+  <p>Formulário válido: {{form.valid}}</p>
+  <p>Formulário foi tocado: {{form.touched}}</p>
+  <p>Formulário sujo: {{form.dirty}}</p>
+
+</div>
