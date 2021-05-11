@@ -9,4 +9,4 @@ Neste repositório vou colocar vários projetos, cada um com um recurso diferent
 5. [Angular Arquitetura de Componentes](AngularArquiteturaDeComponentes/)
 6. [Angular e Rotas](AngularAndRoutes/)
 
-![Example img]()
+![Example img](angular.png)

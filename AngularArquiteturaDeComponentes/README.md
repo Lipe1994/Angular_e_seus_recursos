@@ -4,5 +4,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Neste projeto criei submodulos, lazyLoad e comunicação entre componentes pai e filho.
 
-![Example](https://github.com/Lipe1994/AngularArquiteturaDeComponentes/blob/master/example01.png)
-![Example 2](https://github.com/Lipe1994/AngularArquiteturaDeComponentes/blob/master/example02.png)
+![Example](example01.png)
+![Example 2](example02.png)
