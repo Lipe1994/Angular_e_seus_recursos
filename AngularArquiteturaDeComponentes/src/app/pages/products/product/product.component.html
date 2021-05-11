@@ -1,0 +1,16 @@
+<div>
+  <h6>{{product?.name}}</h6>
+  <img [src]="product?.image" />
+  <p>{{product?.description}}</p>
+  
+  <ng-content *ngIf="!product?.active" select="p"></ng-content>
+  
+  <button 
+      type="button" 
+      class="btn"  
+      [class]="product?.active ? 'btn-info' : 'btn-danger'"
+      (click)="event()"
+    >
+      {{product?.active ? 'active' : 'inactive'}}
+    </button>
+</div>
