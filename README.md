@@ -4,6 +4,7 @@ Neste repositório vou colocar vários projetos, cada um com um recurso diferent
 
 1. [Projeto usando pipes](PipesNoAngular/)
 2. [Promises e Observables](AngularPromisesEObservables/)
+3. [ReactiveForm Com FormBuilder](ReactiveFormComFormBuilder/)
 3. [ReactiveForm Com FormBuilder e Validators](ReactiveFormComFormBuilderEValidators/)
 
 ![Example img]()
