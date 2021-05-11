@@ -1,0 +1,40 @@
+<div  class="formulario">
+
+  <h1>{{title}}</h1>
+  <hr />
+
+  <form (ngSubmit)="chamarLog()" [formGroup]="form" novalidade>
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Nome"  formControlName="name" />
+        <span *ngIf="form.get('name')?.errors?.required && form.get('name')?.touched">campo inválido</span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Sobrenome"  formControlName="lastName" />
+        <span *ngIf="form.get('lastName')?.errors?.required && form.get('lastName')?.touched" >campo inválido</span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="cpf" formControlName="cpf" cpf [textMask]="{mask: MASKS.cpf.textMask}"  />
+        <span *ngIf="form.get('cpf')?.errors?.cpf && form.get('cpf')?.touched" >cpf inválido</span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Telefone" formControlName="phone" telefone #telefone [textMask]="{mask: MASKS.telefone?.textMaskFunction(telefone?.value)}"  />
+        <span *ngIf="form.get('phone')?.errors?.telefone && form.get('phone')?.touched" >telefone inválido</span>
+      </div>
+
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Email"  formControlName="email" />
+        <span *ngIf="form.get('email')?.errors?.required && form.get('email')?.touched">campo inválido</span>
+        <span *ngIf="form.get('email')?.errors?.email && form.get('email')?.touched">email inválido</span>
+      </div>
+
+      <button class='btn btn-info'  type="submit">Evento</button>
+  </form>
+
+  <p>Formulário válido: {{form.valid}}</p>
+  <p>Formulário foi tocado: {{form.touched}}</p>
+  <p>Formulário sujo: {{form.dirty}}</p>
+
+</div>
