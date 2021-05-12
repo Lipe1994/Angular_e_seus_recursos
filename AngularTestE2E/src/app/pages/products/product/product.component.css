@@ -1,0 +1,15 @@
+div{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    border-width:1px ;
+    border-style: solid;
+    border-color: steelblue;
+    margin: 5px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}

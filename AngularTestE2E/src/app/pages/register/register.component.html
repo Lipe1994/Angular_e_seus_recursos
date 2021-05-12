@@ -1,0 +1,31 @@
+<div  class="formulario">
+
+    <h1>{{title}}</h1>
+    <hr />
+  
+    <form (ngSubmit)="save()" [formGroup]="form" novalidade>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Nome"  formControlName="name"  id='name'/>
+          <p *ngIf="form.get('name')?.errors?.required && form.get('name')?.touched">campo inválido</p>
+        </div>
+  
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Sobrenome"  formControlName="lastName" id='lastName' />
+          <p *ngIf="form.get('lastName')?.errors?.required && form.get('lastName')?.touched" >campo inválido</p>
+        </div>
+  
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="Email"  formControlName="email" id='email' />
+          <p *ngIf="form.get('email')?.errors?.required && form.get('email')?.touched">campo inválido</p>
+          <p *ngIf="form.get('email')?.errors?.email && form.get('email')?.touched">email inválido</p>
+        </div>
+  
+        <button class='btn btn-info'  id='btnSave' type="submit">Evento</button>
+    </form>
+  
+    <p>Formulário válido: {{form.valid}}</p>
+    <p>Formulário foi tocado: {{form.touched}}</p>
+    <p>Formulário sujo: {{form.dirty}}</p>
+    <p id='status'>Status: {{success}}</p>
+  
+  </div>

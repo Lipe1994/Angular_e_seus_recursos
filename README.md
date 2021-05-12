@@ -14,6 +14,7 @@ Neste repositório vou colocar vários projetos, cada um com um recurso diferent
 
 10. [Angular teste de unidade e de comportamento](AngularAndTests/)
 11. [Angular teste em serviços usando mock](AngularAndTestsInServices/)
+11. [Angular teste ponta a ponta E2E](AngularTestE2E/)
 
 
 ![Example img](angular.png)

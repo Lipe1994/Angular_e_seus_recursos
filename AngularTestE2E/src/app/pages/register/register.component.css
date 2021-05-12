@@ -1,0 +1,10 @@
+.formulario{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div>p{
+    color: red;
+}
