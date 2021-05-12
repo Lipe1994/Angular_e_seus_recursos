@@ -12,7 +12,8 @@ Neste repositório vou colocar vários projetos, cada um com um recurso diferent
 8. [Angular Arquitetura de Componentes](AngularArquiteturaDeComponentes/)
 9. [Angular e Rotas](AngularAndRoutes/)
 
-10. [Angular teste em serviços usando mock](AngularAndTestsInServices/)
+10. [Angular teste de unidade e de comportamento](AngularAndTests/)
+11. [Angular teste em serviços usando mock](AngularAndTestsInServices/)
 
 
 ![Example img](angular.png)
